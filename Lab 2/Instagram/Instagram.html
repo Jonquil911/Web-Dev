@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            padding: 0 20px;
+        }
+
+        .main-container {
+            display: flex;
+            gap: 40px;
+            max-width: 1100px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .image-section {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .image-section img {
+            width: 450px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 350px;
+            margin-top: 50px;
+        }
+
+        .login-container {
+            background-color: white;
+            width: 100%;
+            border-radius: 2px;
+            border: 1px solid rgb(232, 231, 231);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .sign_up-container {
+            background-color: white;
+            width: 100%;
+            border-radius: 1px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: left;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #262626;
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #0095f6;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #0095f6;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: #0078d4;
+        }
+
+        .divider {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #dbdbdb;
+        }
+
+        .divider span {
+            padding: 0 10px;
+            font-size: 14px;
+            color: #8e8e8e;
+        }
+
+        .footer {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #8e8e8e;
+        }
+
+        .footer a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .facebook-btn {
+            background-color: white;
+            color: #0095f6;
+            font-size: 14px;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="image-section">
+            <img src="insta.jpg" alt="Image">
+        </div>
+        <div class="form-container">
+            <div class="login-container">
+                <div class="logo">Instagram</div>
+                <form>
+                    <input class="input-field" type="text" placeholder="Phone number, username or email" required>
+                    <input class="input-field" type="password" placeholder="Password" required>
+                    <button class="login-btn" type="submit">Log in</button>
+                </form>
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+                <button class="facebook-btn">Log in with Facebook</button>
+                <div class="footer">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+            <div class="sign_up-container">
+                <p>Don't have an account? <a href="#" style="color:#0095f6;text-decoration: none;">Sign up!</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
